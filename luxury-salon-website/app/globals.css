@@ -37,6 +37,15 @@
   --sidebar-accent-foreground: oklch(0.88 0.04 80);
   --sidebar-border: oklch(0.22 0.01 80);
   --sidebar-ring: oklch(0.82 0.06 75);
+  /* Pricing section soft salon colors */
+  --pricing-bg: oklch(0.10 0.01 60);
+  --pricing-card: oklch(0.15 0.01 55);
+  --pricing-card-dark: oklch(0.12 0.01 58);
+  --pricing-accent: oklch(0.85 0.08 70);
+  --pricing-accent-foreground: oklch(0.10 0 0);
+  --pricing-border: oklch(0.20 0.02 65);
+  --pricing-tag: oklch(0.92 0.08 65);
+  --pricing-tag-foreground: oklch(0.15 0.01 55);
 }
 
 @theme inline {
@@ -79,6 +88,15 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  /* Pricing section colors */
+  --color-pricing-bg: var(--pricing-bg);
+  --color-pricing-card: var(--pricing-card);
+  --color-pricing-card-dark: var(--pricing-card-dark);
+  --color-pricing-accent: var(--pricing-accent);
+  --color-pricing-accent-foreground: var(--pricing-accent-foreground);
+  --color-pricing-border: var(--pricing-border);
+  --color-pricing-tag: var(--pricing-tag);
+  --color-pricing-tag-foreground: var(--pricing-tag-foreground);
 }
 
 @layer base {
@@ -126,4 +144,17 @@
   background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.04) 100%);
   border-color: rgba(218,194,162,0.3);
   box-shadow: 0 8px 32px rgba(218,194,162,0.15);
+}
+
+.pricing-card {
+  background: linear-gradient(135deg, rgba(240, 230, 200, 0.08) 0%, rgba(200, 180, 150, 0.04) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(218, 194, 162, 0.2);
+  transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+  background: linear-gradient(135deg, rgba(240, 230, 200, 0.12) 0%, rgba(200, 180, 150, 0.08) 100%);
+  border-color: rgba(218, 194, 162, 0.4);
+  box-shadow: 0 12px 40px rgba(218, 194, 162, 0.2);
 }

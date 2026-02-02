@@ -26,7 +26,7 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
           fill
           priority
           className="object-cover object-center"
-          quality={90}
+          quality={75}
         />
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-background/40" />
