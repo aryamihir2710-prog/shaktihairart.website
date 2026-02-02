@@ -3,11 +3,6 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  images: {
-    unoptimized: false,
-    formats: ['image/avif', 'image/webp'],
-    qualities: [75, 90],
-  },
 }
 
 export default nextConfig
